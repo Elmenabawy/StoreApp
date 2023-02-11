@@ -1,0 +1,52 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body> 
+        <h1 class="text-center mt-3">Products List</h1>
+        <div class="w-75 p-3 m-auto">
+            <div class="group my-3">
+                <label>Product Name<span class="text-danger"> *</span></label>
+                <input id="productName" class="form-control" type="text">
+                <div id="nameAlert" class="alert alert-danger my-2 d-none">Product should start with uppercase and 8 chars!!</div>
+            </div>
+            <div class="group my-3">
+                <label>Product Price<span class="text-danger"> *</span></label>
+                <input id="productPrice" class="form-control " type="number">
+            </div>
+            <div class="group my-3">
+                <label>Product Category<span class="text-danger"> *</span></label>
+                <input id="productCategory" class="form-control" type="text">
+            </div>
+            <div class="group my-3">
+                <label>Product Description</label>
+                <textarea id="productDesc" class="form-control"></textarea>
+            </div>
+            
+            <button disabled id="addBtn" class="btn btn-info my-3 float-end">add product</button>
+            <div class="clearfix"></div>
+            
+            
+            <input onkeyup="search(this.value)" type="text" class="form-control my-3" placeholder="search by product name....">
+            <table class="table table-striped">
+                <thead class="bg-dark text-white">
+                    <th>product name</th>
+                    <th>product price</th>
+                    <th>product category</th>
+                    <th>product description</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody id="tableBody">
+                
+                </tbody>
+            </table>
+            
+        </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    </body> 
+</html>
